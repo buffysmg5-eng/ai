@@ -16,6 +16,20 @@ python3 build_content28.py   # 이미지 9장 / 5,289자
 python3 build_content30.py   # 이미지 8장 / 3,822자
 ```
 
+## 한 번에 적용하기 (권장)
+
+`tools/fix-27.bat` 을 **프로젝트 폴더(큐가 들어 있는 폴더)에 넣고 더블클릭**하면 끝납니다.
+
+1. 27편 수정본을 GitHub에서 내려받고
+2. 폴더를 뒤져 27편 패키지를 찾아 (식별자: `01-three-tiers.png` + `07-boj-taper.png`)
+3. 기존 `content.json`을 `.bak-날짜시각`으로 백업한 뒤 교체하고
+4. `run-0911.bat`을 찾으면 이어서 실행할지 물어봅니다 (Y/N)
+
+한글이 아니라 ASCII 파일명으로 매칭하므로 윈도우 코드페이지가 깨져도
+엉뚱한 파일을 건드리지 않습니다. 백업이 남으므로 되돌릴 수 있습니다.
+
+내려받기: https://github.com/buffysmg5-eng/ai/raw/claude/naver-market-blog-setup-11epes/market-blog/tools/fix-27.bat
+
 ## 빌드된 패키지 (재빌드 불필요)
 
 `pkg47`·`pkg48`·`pkg50`(네이버용)과 `pkg47t`·`pkg48t`·`pkg50t`(티스토리용)을 그대로 넣어
